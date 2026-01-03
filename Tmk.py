@@ -13,8 +13,8 @@ from datetime import datetime
 SOCKS_VERSION = 5
 class Proxy:
     def __init__(self):
-        self.username = "bot"
-        self.password = "bot"
+        self.username = "your_username"
+        self.password = "your_password"
     def handle_client(self, connection):
         version, nmethods = connection.recv(2)
         methods = self.get_available_methods(nmethods, connection)
